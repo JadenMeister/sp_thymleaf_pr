@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" th:href="@{/css/index.css}">
+    <title>스프링회원가입</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector(".btn").addEventListener("click", function () {
+                console.log("로그인 버튼 클릭됨");
+                alert("로그인페이지로 이동합니다.");
+                window.location.href = "/user";
+            });
+        });
+
+
+    </script>
+</head>
+<body>
+
+<header>
+    <div class="header">헤더임</div>
+</header>
+<main>
+    <div class="main">메인임</div>
+    <button class="btn">로그인 버튼</button>
+</main>
+<footer>
+    <div class="footer">푸터임</div>
+</footer>
+
+</body>
+</html>
